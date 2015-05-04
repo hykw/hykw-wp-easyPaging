@@ -10,10 +10,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 9,
-      'page_prev' => FALSE,
-      'page_next' => 2,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 9,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => 2,
     );
     $this->assertEquals($expects, $result);
 
@@ -22,10 +22,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 8,
-      'page_max' => 9,
-      'page_prev' => 7,
-      'page_next' => 9,
+      hykwEasyPagingClass::PAGE_CURRENT => 8,
+      hykwEasyPagingClass::PAGE_MAX => 9,
+      hykwEasyPagingClass::PAGE_PREV => 7,
+      hykwEasyPagingClass::PAGE_NEXT => 9,
     );
     $this->assertEquals($expects, $result);
 
@@ -34,10 +34,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 9,
-      'page_max' => 9,
-      'page_prev' => 8,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 9,
+      hykwEasyPagingClass::PAGE_MAX => 9,
+      hykwEasyPagingClass::PAGE_PREV => 8,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
@@ -51,10 +51,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 3,
-      'page_prev' => FALSE,
-      'page_next' => 2,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 3,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => 2,
     );
     $this->assertEquals($expects, $result);
 
@@ -63,10 +63,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 2,
-      'page_max' => 3,
-      'page_prev' => 1,
-      'page_next' => 3,
+      hykwEasyPagingClass::PAGE_CURRENT => 2,
+      hykwEasyPagingClass::PAGE_MAX => 3,
+      hykwEasyPagingClass::PAGE_PREV => 1,
+      hykwEasyPagingClass::PAGE_NEXT => 3,
     );
     $this->assertEquals($expects, $result);
 
@@ -75,10 +75,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 3,
-      'page_max' => 3,
-      'page_prev' => 2,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 3,
+      hykwEasyPagingClass::PAGE_MAX => 3,
+      hykwEasyPagingClass::PAGE_PREV => 2,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
@@ -91,10 +91,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 1,
-      'page_prev' => FALSE,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 1,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
@@ -108,10 +108,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 2,
-      'page_prev' => FALSE,
-      'page_next' => 2,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 2,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => 2,
     );
     $this->assertEquals($expects, $result);
 
@@ -120,10 +120,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 2,
-      'page_max' => 2,
-      'page_prev' => 1,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 2,
+      hykwEasyPagingClass::PAGE_MAX => 2,
+      hykwEasyPagingClass::PAGE_PREV => 1,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
@@ -136,10 +136,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
 
     $result = hykwEasyPaging();
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 0,
-      'page_prev' => FALSE,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 0,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
@@ -165,10 +165,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
     wp_reset_postdata();
 
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 9,
-      'page_prev' => FALSE,
-      'page_next' => 2,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 9,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => 2,
     );
     $this->assertEquals($expects, $result);
 
@@ -188,10 +188,10 @@ class UT_hykwEasyPaging extends hykwEasyUT {
     wp_reset_postdata();
 
     $expects = array(
-      'page_current' => 1,
-      'page_max' => 1,
-      'page_prev' => FALSE,
-      'page_next' => FALSE,
+      hykwEasyPagingClass::PAGE_CURRENT => 1,
+      hykwEasyPagingClass::PAGE_MAX => 1,
+      hykwEasyPagingClass::PAGE_PREV => FALSE,
+      hykwEasyPagingClass::PAGE_NEXT => FALSE,
     );
     $this->assertEquals($expects, $result);
   }
