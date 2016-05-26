@@ -4,7 +4,7 @@
     Plugin URI: https://github.com/hykw/hykw-wp-easyPaging
     Description: ページング用データを返すプラグイン
     Author: Hitoshi Hayakawa
-    version: 1.0.0
+    version: 1.0.1
   */
 
 class hykwEasyPagingClass
@@ -37,7 +37,12 @@ class hykwEasyPagingClass
     $wp_query = $this->wp_query;
 
     # RET: 現在のページ番号
-    $page_current = get_query_var('paged') ? get_query_var('paged') : 1;
+    if (!$wp_query->is_paged) {
+      $page_current = 1;
+    } else {
+      $page_current = $wp_query->query_vars['paged'];
+    }
+
     $ret[self::PAGE_CURRENT] = $page_current;
 
     # RET: 総ページ数
